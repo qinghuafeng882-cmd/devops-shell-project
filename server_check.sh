@@ -101,7 +101,7 @@ check_service() {
     if systemctl is-active --quiet "$svc"; then
         write_log "[OK] 服务运行正常：$svc"
     else
-        write_log "[ERROR] 服务未运行：$svc"
+        write_log "[ERROR] 服务异常或未运行：$svc"
         mark_problem
     fi
 }
