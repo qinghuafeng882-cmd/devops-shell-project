@@ -7,7 +7,7 @@ has_problem=0
 disk_threshold=80
 memory_threshold=500
 
-default_services=("nginx" "ssh" )
+default_services=("nginx" "ssh" "docker")
 ports=("22" "80" "443")
 
 write_log() {
